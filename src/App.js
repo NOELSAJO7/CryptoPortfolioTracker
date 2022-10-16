@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import { BrowserRouter,Route } from 'react-router-dom'
 import './App.css';
+import Trackprice from './components/TrackPrice/TrackPrice';
+import Navbar from './components/Navbar';
+import Aboutcoin from './components/Aboutcoin';
+import Carousel from './components/TrackPrice/Carousel';
+import Homepage from './components/Homepage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+
+          <Navbar/>
+          {/* <Carousel/> */}
+          <Homepage/>
+          {/* <Route exact path='/' element={<Trackprice/>}/>
+          <Route exact path='/coin:id' element={<Aboutcoin/>}/> */}
+          {/* <Trackprice/> */}
+    
+    </BrowserRouter>
+    
   );
 }
 

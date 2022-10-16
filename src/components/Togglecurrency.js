@@ -1,0 +1,22 @@
+import React from 'react';
+import './Togglecurrency.css';
+import { CryptoState } from './CryptoContext';
+
+
+const Togglecurrency = () => {
+
+    const {currency,Setcurrency}=CryptoState();
+
+    const btnClick=(e)=>{
+        Setcurrency(e.target.id);
+    }
+
+  return (
+    <div>
+      <button id="INR" onClick={btnClick}>INR</button>
+      <button id="USD" onClick={btnClick}>USD</button>
+    </div>
+  )
+}
+
+export default Togglecurrency
