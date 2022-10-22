@@ -54,8 +54,8 @@ const Carousel = () => {
       <Link className='link'>
       <div className='carouselitem'>
           <img src={coin.image} alt={coin.name}/>
-              <div className='gold'>{coin.symbol}</div><div style={{ color:colr
-              }}>  {isProfit && '+'}{coin.price_change_percentage_24h} % {isProfit?'↑':' ↓'}</div>
+              <div className='gold'>{coin.symbol.toUpperCase()}</div><div style={{ color:colr
+              }}>  {isProfit && '+'}{coin.price_change_percentage_24h.toPrecision(2)} % {isProfit?'↑':' ↓'}</div>
           <div className='gold'>{symbol}{numberWithcoma(coin.current_price)}</div>
       </div>
       </Link>  
