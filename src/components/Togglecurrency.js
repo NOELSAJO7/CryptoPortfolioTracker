@@ -5,7 +5,7 @@ import { CryptoState } from './CryptoContext';
 
 const Togglecurrency = () => {
 
-    const {currency,Setcurrency}=CryptoState();
+    const {currency,Setcurrency}=CryptoState("INR");
 
     const btnClick=(e)=>{
         Setcurrency(e.target.id);

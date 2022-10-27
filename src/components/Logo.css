@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+margin: 1em;
+margin-left: 2em;
+}
+
+.moto{
+    font-size: 1.5em;
+    font-family: 'Fasthand', cursive;
+    color: white;
+}

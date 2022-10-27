@@ -1,0 +1,49 @@
+.chartbtnloadetc{
+    display: flex;
+    flex-direction:'row' ;
+    border: 4px solid green;
+    /* background-color: rgb(24, 122, 135); */
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 90%;
+    margin: auto;  
+}
+/* .chartbtnloadetc div{
+    border:6px solid blue;
+} */
+
+select{
+    height: 30px;
+    position:relative;
+    /* border:2px solid red; */
+    color: rgb(255, 255, 255);
+    /* background-color: rgba(98, 98, 98, 0); */
+    background: transparent;
+    top:0px;
+    right:3.8em;
+    outline: none;
+    
+}
+option{
+    background-color:black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+.CircularProgress{
+margin: auto;
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+    .chartbtnloadetc{
+        
+        width: 60%; 
+        border-left:2px solid black ;
+    }
+    
+}

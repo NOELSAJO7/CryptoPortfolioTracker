@@ -1,0 +1,39 @@
+.coindata{
+    display: flex;
+    flex-direction:column; 
+    border:10px solid #ff0000;
+    color: aliceblue;
+}
+
+.logodescription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size:1.2em;
+    width: 80%;
+    margin: auto;
+}
+
+.logodescription a{
+    text-decoration: none;
+    color: rgba(185, 179, 179, 0.909);
+}
+
+.coinname{
+    font-size:2em;
+    font-weight: 600;
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+    .coindata{
+        flex-direction:row; 
+    }
+    .logodescription{
+        width: 30%;
+    }
+    
+}

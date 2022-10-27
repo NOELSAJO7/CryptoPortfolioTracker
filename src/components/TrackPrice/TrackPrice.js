@@ -1,5 +1,5 @@
 import './TrackPrice.css'
-import React, { useState,useMemo } from 'react';
+import React, { useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { CryptoState } from '../CryptoContext';
@@ -17,7 +17,6 @@ const numberWithcoma=(x)=>{
 
       "& .MuiPaginationItem-root":{
         color: "White",
-        // backgroundColor:"red"
         fontSize:"1em",
         margin:"0.3em"
 
@@ -47,7 +46,7 @@ const Trackprice=()=>{
 
     React.useEffect(()=>{
         fetchCoins()
-    },[currency])
+    })
     
     const [search,setSearch]=useState('')     //to search the coins
 
@@ -67,6 +66,7 @@ const Trackprice=()=>{
     //           setCoinintable(filteredcoins)     
     //     }
     // },[search])
+
 
     
     const handleSearch=()=>{
@@ -128,7 +128,7 @@ let isProfit= coin.price_change_percentage_24h>0;
 
 
               return (
-                <tr key={key} onClick={()=>navigate(`/coins/${coin.id}`)}>
+                <tr key={key} onClick={()=>navigate(`/Aboutcoin/${coin.id}`)} >
                   <td>
                     <div className="imagenamesym">
                     <img src={coin.image} alt={coin.name}/>
