@@ -4,7 +4,7 @@ import { CryptoState } from './CryptoContext';
 
 
 const Togglecurrency = () => {
-
+// eslint-disable-next-line
     const {currency,Setcurrency}=CryptoState("INR");
 
     const btnClick=(e)=>{

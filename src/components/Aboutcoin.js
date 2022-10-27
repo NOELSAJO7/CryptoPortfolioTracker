@@ -42,6 +42,7 @@ const Aboutcoin = () => {
 
 useEffect(()=>{
 fetchCoin();
+// eslint-disable-next-line
 },[coin]);
 
 
