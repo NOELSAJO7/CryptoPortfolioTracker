@@ -18,10 +18,10 @@ const numberWithcoma=(x)=>{
       "& .MuiPaginationItem-root":{
         color: "White",
         fontSize:"1em",
-        margin:"0.3em"
+        margin:"0.5px"
 
+        
       }
-      
     }
   }));
 
@@ -179,40 +179,6 @@ export default Trackprice;
 
 
 
-
-
-
-
-// {handleSearch().map((coin,key)=>{
-//   let isProfit= coin.price_change_percentage_24h>0;
-// //    console.log(coin)
-//   let colr='grey';
-//   if(coin.price_change_percentage_24h>0)
-//   colr='green';
-//   else if(coin.price_change_percentage_24h<0)
-//   colr='red';
-//   return(
-//     <tr key={coin.id}>
-// <Link className='rowlink'>
-    
-//     <td>
-      // <div className="imagenamesym">
-      //     <img src={coin.image} alt={coin.name}/>
-      //         <div><span>{coin.name}</span><span> ({coin.symbol.toUpperCase()})</span></div>
-      // </div>    
-//     </td>
-
-    
-
-//     <td>{numberWithcoma(coin.current_price)}</td>
-//     <td style={{ color:colr
-//               }}>  {isProfit && '+'}{coin.price_change_percentage_24h.toPrecision(2)} % {isProfit?'↑':' ↓'}</td>
-//     <td>{numberWithcoma(coin.market_cap).slice(0,9)}M</td>
-      
-//       </Link> 
-//       </tr>
-//     );
-// })}
 
 
 

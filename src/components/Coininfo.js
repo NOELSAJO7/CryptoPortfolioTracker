@@ -28,6 +28,7 @@ const Coininfo = ({coin}) => {
   let options = {
     elements:{point:{radius:0.9}},
     responsive: true,
+    maintainAspectaRatio:true,
      plugins: {
           legend: {
               display: true,
