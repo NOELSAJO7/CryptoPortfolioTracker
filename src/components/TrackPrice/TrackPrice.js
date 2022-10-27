@@ -31,14 +31,14 @@ const Trackprice=()=>{
     const {currency}=CryptoState();
     
     const[coins,setCoins]=useState([]);          //to fetch details of all coins
-    const[loading,setLoading]=useState(false);
+    // const[loading,setLoading]=useState(false);
 
     const fetchCoins=async()=>{
-        setLoading(true)
+        // setLoading(true)
         const {data}=await axios.get(CoinList(currency));
         // console.log(data);
         setCoins(data);
-        setLoading(false);
+        // setLoading(false);
       }
 
       const navigate = useNavigate();
@@ -46,7 +46,8 @@ const Trackprice=()=>{
 
     React.useEffect(()=>{
         fetchCoins()
-    })
+        // eslint-disable-next-line
+    },[currency])
     
     const [search,setSearch]=useState('')     //to search the coins
 

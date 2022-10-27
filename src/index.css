@@ -3,16 +3,12 @@
   padding: 0;
 }
 body {
-  background-image: url('./images/vecteezy_traveling-at-the-speed-of-light-3d-illustration-background_1271668.jpg');
+  /* background-image: url('./images/vecteezy_traveling-at-the-speed-of-light-3d-illustration-background_1271668.jpg'); */
   /* background-image: url("./images/1489194.jpg"); */
-  /* background-image: url("./images/1489205.jpg"); */
-  /* background-image: url("./images/1534541.jpg"); */
-  /* background-image: url("./images/4051377.jpg"); */
+  /* background-image: url("./images/1489205.jpg");
+  background-image: url("./images/1534541.jpg"); */
+  background-image: url("./images/4051377.jpg");
   /* background-image: url("./images/5457417.jpg"); */
-  /* background-image: url("./images/862222.jpg"); */
-  /* background-image: url("./images/862226.jpg"); */
-  /* background-image: url("./images/862449.jpg"); */
-  /* background-image: url("./images/vecteezy_black-background-concept_.jpg"); */
 
   height:100vh;
   /* border: 5px solid red; */

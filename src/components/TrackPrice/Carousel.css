@@ -18,3 +18,15 @@ img{
 .gold{
     color: rgb(225, 223, 199);
 }
+
+@media only screen and (max-width: 600px) {
+
+ .carouselitem{
+    
+    font-size: small;
+        }
+
+img{
+height: 3em;
+}
+}

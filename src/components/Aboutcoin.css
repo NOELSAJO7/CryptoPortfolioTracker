@@ -1,10 +1,12 @@
 .coindata{
     display: flex;
     flex-direction:column; 
-    border:10px solid #ff0000;
+    /* border:10px solid #ff0000; */
     color: aliceblue;
 }
-
+.rcm{
+    color: rgb(185, 179, 179);
+}
 .logodescription{
     display: flex;
     flex-direction: column;
@@ -21,10 +23,28 @@
 }
 
 .coinname{
-    font-size:2em;
+    font-size:1.5em;
     font-weight: 600;
+    color: rgba(185, 179, 179, 0.909);
 }
 
+
+
+@media only screen and (max-width: 600px) {
+    .coindata{
+        font-size: small;
+    }
+    .coinname{
+        font-size: medium;
+    }
+    span{
+        font-size: small;
+    }
+
+    .rankmcap{
+        font-size: small;   
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {

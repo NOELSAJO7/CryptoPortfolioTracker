@@ -13,3 +13,43 @@ margin-left: 2em;
     font-family: 'Fasthand', cursive;
     color: white;
 }
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .logo{
+        flex-direction: column;
+        margin-left: 1.5em;
+        /* border: 2px solid green; */
+    }
+    .logo img{
+        margin: 0;
+        /* border: 2px solid red; */
+        height: 4em;
+        }
+    .moto{
+            position: relative;
+            font-size: 1em;
+            bottom: 1.5em;
+            /* border: 2px solid brown; */
+        }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

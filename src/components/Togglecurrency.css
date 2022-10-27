@@ -13,3 +13,10 @@ button:hover {
 /* button:active {     
     background-color:green;    
 } */
+
+
+@media only screen and (max-width: 600px) {
+    button{
+        font-size:12px;
+    }
+}

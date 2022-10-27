@@ -35,7 +35,8 @@ const Carousel = () => {
   // console.log('trending',trending);
    useEffect(()=>{
     fetchTrendingCoin();
-   },[])
+    // eslint-disable-next-line
+   },[currency])
 
 
    const navigate=useNavigate();

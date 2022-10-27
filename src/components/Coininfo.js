@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { Chartdata } from '../config/apis';
 import { CryptoState } from './CryptoContext';
 import {Line} from 'react-chartjs-2';
+// eslint-disable-next-line
 import Chart from 'chart.js/auto';
 import './Coininfo.css';
 
@@ -16,12 +17,13 @@ const Coininfo = ({coin}) => {
   const fetchHistoricData=async ()=>{
     const{data}=await axios.get(Chartdata(coin.id,days,currency));
     setHistoricalData(data.prices);
-    console.log('days',days)
+    // console.log('days',days)
   }
 
 
   useEffect(()=>{
     fetchHistoricData();
+    // eslint-disable-next-line
   },[days]);
   let options = {
     elements:{point:{radius:0.9}},
